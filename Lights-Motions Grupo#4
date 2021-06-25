@@ -1,0 +1,44 @@
+BNF  Lights-Motions  Grupo#4
+
+1.Eduardo Miguel Salgado Artica 20181004504
+2.Jeison Geovanni Aguilar Calix 20151004832
+3.Kenet Francisco Orellana Meza 20141011708
+4.Gerald Emmanuel Figueroa Gomez 20171001169
+5.Melvin Elias Cedillo Romero 20171005421
+
+<Controlador> ::- <Luces>  <Chorro de Agua>
+
+<Luces> ::- <Color> <Brillo>
+
+	<Color> ::- <Codigo de color> | <Luces><Color>
+
+		<Codigo de color> ::- <Entero> | <Cadena>
+
+			<Cadena> ::- <letra> | <cadena><letra>
+			<letra> ::- a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z
+			<Entero> ::- <digito> | <entero><digito>
+			<digito> ::- 0|1|2|3|4|5|6|7|8|9
+
+	<Brillo> ::- <Intensidad de brillo> | <Brillo><Intensidad de brillo>
+
+		<Intensidad de brillo> ::- <Entero>
+
+			<Entero> ::- <digito> | <entero><digito>
+			<digito> ::- 0|1|2|3|4|5|6|7|8|9
+
+<Chorro de Agua> ::- <Presion del agua> <Direccion del chorro>
+
+	<Presion del agua> ::- <Altura> | <Presion del agua><Altura>
+
+		<Altura> ::- <Entero>
+
+			<Entero> ::- <digito> | <entero><digito>
+			<digito> ::- 0|1|2|3|4|5|6|7|8|9
+
+	<Direccion del chorro> ::- <Angulo de la valvula>
+
+		<Angulo de la valvula> ::- <Entero> <Simbolo de grado>
+
+			<Entero> ::- <digito> | <entero><digito>
+			<digito> ::- 0|1|2|3|4|5|6|7|8|9
+			<Simbolo de grado> ::- °
